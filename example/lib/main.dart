@@ -25,7 +25,7 @@ class _ItemsWidgetState extends State<ItemsWidget> {
   void initState() {
     super.initState();
 
-    _readAll();
+    // _readAll();
   }
 
   Future<Null> _readAll() async {
@@ -55,6 +55,14 @@ class _ItemsWidgetState extends State<ItemsWidget> {
         appBar: AppBar(
           title: Text('Plugin example app'),
           actions: <Widget>[
+            FlatButton(
+                child: Text('init'),
+                onPressed: () {
+                  _storage.init().then((bool value) {
+                    print('initialization $value');
+                  });
+                }
+            ),
             IconButton(
                 key: Key('add_random'),
                 onPressed: _addNewItem,

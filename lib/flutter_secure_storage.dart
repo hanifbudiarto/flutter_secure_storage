@@ -64,6 +64,11 @@ class FlutterSecureStorage {
     return value != null;
   }
 
+  Future<bool> init() async {
+    final bool value = await _channel.invokeMethod('init');
+    return value;
+  }
+
   /// Deletes associated value for the given [key].
   ///
   /// [key] shoudn't be null.
@@ -147,6 +152,7 @@ class IOSOptions extends Options {
 
   final String _groupId;
   final IOSAccessibility _accessibility;
+
   @override
   Map<String, String> _toMap() {
     final m = <String, String>{};
