@@ -78,7 +78,7 @@ public class FlutterSecureStoragePlugin implements MethodCallHandler, FlutterPlu
             }
         }
 
-        return storageCipher == null;
+        return true;
     }
 
     @Override
