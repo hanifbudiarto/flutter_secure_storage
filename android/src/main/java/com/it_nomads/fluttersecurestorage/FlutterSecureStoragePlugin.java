@@ -58,7 +58,7 @@ public class FlutterSecureStoragePlugin implements MethodCallHandler, FlutterPlu
 
           StorageCipher18Implementation.moveSecretFromPreferencesIfNeeded(preferences, context);
 
-          channel = new MethodChannel(messenger, "plugins.it_nomads.com/flutter_secure_storage");
+          channel = new MethodChannel(messenger, "plugins.it_nomads.com/flutter_secure_storage_with_init");
           channel.setMethodCallHandler(this);
       } catch (Exception e) {
           Log.e("FlutterSecureStoragePl", "Registration failed", e);

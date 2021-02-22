@@ -4,11 +4,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:meta/meta.dart';
 
-class FlutterSecureStorage {
-  const FlutterSecureStorage();
+class FlutterSecureStorageWithInit {
+  const FlutterSecureStorageWithInit();
 
   static const MethodChannel _channel =
-      const MethodChannel('plugins.it_nomads.com/flutter_secure_storage');
+      const MethodChannel('plugins.it_nomads.com/flutter_secure_storage_with_init');
 
   /// Encrypts and saves the [key] with the given [value].
   ///
