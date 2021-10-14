@@ -1,3 +1,9 @@
+## [3.3.7]
+* Fixes import
+
+## [3.3.6]
+* Fixes issue on MissingPluginException
+
 ## [3.3.5]
 * Fixes thread safety issues in android code to close [161](https://github.com/mogol/flutter_secure_storage/issues/161). Thanks [koskimas](https://github.com/koskimas)
 
